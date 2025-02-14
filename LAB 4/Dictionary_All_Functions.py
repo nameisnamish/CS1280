@@ -27,7 +27,7 @@ print(Mobile)
 #Remove last inserted item
 Mobile.popitem()
 
-#Lopping through a directory
+#Lopping through a dictionary
 #Print all keys
 for key in Mobile:
     print(key)
