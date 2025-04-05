@@ -12,7 +12,7 @@ try:
     print(f"\nTotal Rows: {rows}")
     print(f"Total Columns: {columns}")
 
-    print(f"\nLength of the File: {len(df)} rows")
+    print(f"\nLength of the File: {rows} rows")
 
     print("\nFirst 2 Rows:")
     print(df.head(2))
