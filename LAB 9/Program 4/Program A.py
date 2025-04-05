@@ -19,5 +19,9 @@ try:
 
 except FileNotFoundError:
     print(f"Error: The file '{file_path}' does not exist.")
+except pd.errors.EmptyDataError:
+    print(f"Error: The file '{file_path}' is empty.")
+except pd.errors.ParserError:
+    print(f"Error: The file '{file_path}' contains invalid data format.")
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print(f"An unexpected error occurred: {e}")
